@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Montserrat, sans-serif;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.main-header {
+    position: relative;
+}
+
+.layers {
+    height: 200vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center; 
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    background-size: cover;
+    background-position: center; 
+    will-change: transform;
+}
+.layears__header{
+    z-index: 1;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 300px;
+}
+.layears__base {
+    transform: translate3d(0,calc(var(--scrollTop)/2),0);
+
+    border-color: black;
+    border-style:solid;
+
+}
+
+.layears__middle{
+    transform: translate3d(0,calc(var(--scrollTop)/4),0);
+    height: 90%;
+}
+
+.layears__footer{
+    background-color: black;
+    height: 102vh;
+    width: 100%;
+    margin-top: 198vh;
+}
