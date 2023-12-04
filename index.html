@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/index.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="js/index.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <header class="main-header">
-        <div class="layers">
-            <div class="layears__header">
-                <div class="layers__caption">Фотографировать звезды на пленку просто!</div>
-                <div class="layers__title"></div>
+   <div class="wrapper">
+    <div class="content">
+        <header class="main-header">
+            <div class="layers">
+                <div class="layears__header">
+                    <div class="layers__caption">Фотографировать звезды на пленку просто!</div>
+                    <div class="layers__title"></div>
+                </div>
+                <div class="layer layears__base" style="background-image: url(img/Фон.png);"></div>
+                <div class="layer layears__middle" style="background-image: url(img/Слой\ 6dgfd.png);"></div>
+                <div class="layer layears__front" style="background-image: url(img/Слой\ 2-iyguyg.png);"></div>
+                
             </div>
-            <div class="layer layears__base" style="background-image: url(img/Фон.png);"></div>
-            <div class="layer layears__middle" style="background-image: url(img/Слой\ 6dgfd.png);"></div>
-            <div class="layer layears__front" style="background-image: url(img/Слой\ 2-iyguyg.png);"></div>
-            <div class="layer layears__footer"></div>
-        </div>
-    </header>
-    <main></main>
-    <footer></footer>
+        </header>
+        <main></main>
+        <footer>
+        </footer>
+    </div>
+   </div>
 </body>
 </html>

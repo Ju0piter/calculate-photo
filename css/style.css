@@ -2,7 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
+
+:root {
+    --transition: transfotm .475s cubic-bezier(0.75, 0.5, 0, 1); 
+}
+
 @font-face {
     font-family: Montserrat, sans-serif;
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
@@ -11,6 +17,7 @@
 body {
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
 
 }
 .main-header {
@@ -38,10 +45,11 @@ body {
     font-size: 50px;
     font-weight: 800;
     margin-top: 300px;
+    transition: var(--transition);
 }
 .layears__base {
     transform: translate3d(0,calc(var(--scrollTop)/2),0);
-
+    transition: var(--transition);
     border-color: black;
     border-style:solid;
 
@@ -50,11 +58,10 @@ body {
 .layears__middle{
     transform: translate3d(0,calc(var(--scrollTop)/4),0);
     height: 90%;
+    transition: var(--transition);
+    margin-top: 85px;
+}
+.layears__front{
+    margin-top: 20px;
 }
 
-.layears__footer{
-    background-color: black;
-    height: 102vh;
-    width: 100%;
-    margin-top: 198vh;
-}
